@@ -27,11 +27,13 @@
         android:textSize="23sp"
         android:padding="10dp"
         android:layout_marginTop="30dp"></TextView>
+
         <EditText
             android:id="@+id/name"
             android:layout_width="295dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"></EditText>
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#d4145a"></EditText>
     </LinearLayout>
     <LinearLayout
         android:layout_width="wrap_content"
@@ -49,10 +51,11 @@
             android:id="@+id/email"
             android:layout_width="290dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"></EditText>
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#d4145a"></EditText>
     </LinearLayout>
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         <TextView
@@ -67,11 +70,13 @@
             android:id="@+id/mb_number"
             android:layout_width="170dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"></EditText>
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#d4145a"></EditText>
     </LinearLayout>
     <TextView
+        android:id="@+id/show"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"></TextView>
+        android:layout_height="340dp"></TextView>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -86,7 +91,8 @@
             android:textColor="#ffffff"
             android:background="#d4145a"
             android:layout_weight="1"
-            android:layout_margin="10dp"></Button>
+            android:layout_margin="10dp"
+            android:onClick="ONwrite"></Button>
         <Button
             android:id="@+id/read_btn"
             android:layout_width="wrap_content"
@@ -95,7 +101,8 @@
             android:textColor="#ffffff"
             android:background="#d4145a"
             android:layout_weight="1"
-            android:layout_margin="10dp"></Button>
+            android:layout_margin="10dp"
+            android:onClick="ONread"></Button>
         <Button
             android:id="@+id/update_btn"
             android:layout_width="wrap_content"
@@ -104,7 +111,8 @@
             android:textColor="#ffffff"
             android:background="#d4145a"
             android:layout_weight="1"
-            android:layout_margin="10dp"></Button>
+            android:layout_margin="10dp"
+            android:onClick="ONupdate"></Button>
         <Button
             android:id="@+id/remove_btn"
             android:layout_width="wrap_content"
@@ -113,6 +121,7 @@
             android:textColor="#ffffff"
             android:background="#d4145a"
             android:layout_weight="1"
-            android:layout_margin="10dp"></Button>
+            android:layout_margin="10dp"
+            android:onClick="ONremove"></Button>
     </LinearLayout>
 </LinearLayout>
